@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Neha Lakshme N | Resume</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0a1a2f;
+      color: white;
+      line-height: 1.6;
+      padding: 2rem;
+    }
+
+    h1, h2, h3 {
+      color: #4da6ff;
+    }
+
+    .section {
+      margin-bottom: 2rem;
+      border-bottom: 1px solid #1a2a40;
+      padding-bottom: 1.5rem;
+    }
+
+    .contact-info {
+      font-size: 0.95rem;
+    }
+
+    .tab-buttons {
+      display: flex;
+      gap: 1rem;
+      margin-top: 1rem;
+      overflow-x: auto;
+      padding-bottom: 0.5rem;
+    }
+
+    .tab-buttons button {
+      background-color: #1a2a40;
+      border: none;
+      color: white;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+      border-radius: 5px;
+      white-space: nowrap;
+    }
+
+    .tab-buttons button.active {
+      background-color: #4da6ff;
+    }
+
+    .project-content {
+      margin-top: 1rem;
+      background-color: #122342;
+      padding: 1rem;
+      border-radius: 5px;
+    }
+
+    ul {
+      padding-left: 1.5rem;
+    }
+
+    .skills-inline {
+      display: flex;
+      gap: 10px;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+    }
+
+    .languages, .skills-inline {
+      margin-top: 10px;
+    }
+
+    .badge {
+      background-color: #1e90ff;
+      color: white;
+      padding: 8px 12px;
+      border-radius: 20px;
+      font-size: 0.9rem;
+      white-space: nowrap;
+    }
+
+    a {
+      color: #4da6ff;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Neha Lakshme N</h1>
+  <div class="contact-info">
+    Chennai, India • 📞 +91 9500180412 • ✉️ <a href="mailto:nehaa.lakshme@gmail.com">nehaa.lakshme@gmail.com</a><br/>
+    VIT Reg. No: 23BRS1244 • <a href="mailto:neha.lakshme2023@vitstudent.ac.in">neha.lakshme2023@vitstudent.ac.in</a>
+  </div>
+  <!-- Horizontal line and About section -->
+<hr>
+<div class="section">
+  <h2>About</h2>
+  <p>
+    I am a passionate Computer Science student at VIT Chennai, specializing in AI and Robotics. With a strong foundation in programming and machine learning, I have developed projects in healthcare management and pet adoption. An active member of 3 college clubs, I thrive in collaborative and innovative environments.
+  </p>
+</div>
+
+
+
+
+  <div class="section">
+    <h2>Experience</h2>
+    <strong>ValueStream Business Solutions Pvt Ltd — IT Intern</strong><br/>
+    <em>May 2025 – June 2025</em>
+    <ul>
+      <li>Built a web app using Dash & Pandas to automate agent productivity reports, reducing manual work and errors.</li>
+      <li>Developed an online compliance testing platform replacing manual paper-based tests with secure digital versions.</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Education</h2>
+    <strong>Vellore Institute of Technology, Chennai</strong> — B.Tech in Computer Science (AI & Robotics)<br/>
+    <em>Aug 2023 – Present</em><br/>
+    Relevant Courses: Data Structures, Machine Learning, Robotics, OS, Web Development
+
+    <br/><br/>
+    <strong>Hindustan International School, Padur (CBSE)</strong><br/>
+    <em>2019 – 2023</em><br/>
+    Ranked 2nd in 12th Grade Board Exams (2023)
+  </div>
+
+ <div class="section">
+  <h2>Projects</h2>
+  <div class="tab-buttons">
+    <button onclick="showProject('stock')">Stock Live Tracker</button>
+    <button onclick="showProject('planner')">Study Planner Website</button>
+    <button onclick="showProject('scripscroll')">Scrip Scroll (AI T&C Generator)</button>
+    <button onclick="showProject('hospital')">Hospital Management</button>
+    <button onclick="showProject('pet')">Pet Adoption Web App</button>
+    <button onclick="showProject('robot')">Voice & Gesture Robot</button>
+  </div>
+
+  <div id="stock" class="project-content">
+    <h3>Stock Live Tracker with API</h3>
+    <p>Developed a stock portfolio tracker with API integration to track real-time performance of selected stocks.</p>
+    <ul>
+      <li>Displays updated price charts and performance graphs</li>
+      <li>Includes features like portfolio breakdown, investment metrics</li>
+      <li>User-specific data storage and secure authentication</li>
+    </ul>
+  </div>
+  <div id="scripscroll" class="project-content">
+    <h3>Scrip Scroll - AI Terms & Conditions Generator</h3>
+    <p>Built an AI tool that dynamically generates terms and conditions using GPT APIs, tailored to the website content.</p>
+    <ul>
+      <li>HTML/CSS/JS interface with backend logic</li>
+      <li>Useful for startups to generate instant legal templates</li>
+    </ul>
+  </div>
+
+  <div id="planner" class="project-content">
+    <h3>Study Planner Website</h3>
+    <p>A collaborative platform to help students plan and track their study sessions, achievements, and certifications.</p>
+    <ul>
+      <li>Timer, streaks, and reward-based study tracking</li>
+      <li>Interactive dashboard with user progress</li>
+      <li>Peer-sharing of certificates and progress stats</li>
+    </ul>
+  </div>
+
+  
+
+  <div id="hospital" class="project-content">
+    <h3>Hospital Management System</h3>
+    <p>Built a healthcare platform using HTML, CSS, and JS with features like:</p>
+    <ul>
+      <li>Task tracking</li>
+      <li>Real-time chat</li>
+      <li>Appointment scheduling</li>
+      <li>Emergency ambulance booking</li>
+    </ul>
+  </div>
+
+  <div id="pet" class="project-content">
+    <h3>Pet Adoption Web App</h3>
+    <p>Created an interactive adoption site with:</p>
+    <ul>
+      <li>Pet listings & breed-matching quiz</li>
+      <li>Location-based shelter search</li>
+      <li>User-friendly interface for adoption support</li>
+    </ul>
+  </div>
+
+  <div id="robot" class="project-content">
+    <h3>Voice & Gesture Controlled Robot</h3>
+    <p>Designed a Bluetooth-enabled robot with:</p>
+    <ul>
+      <li>Voice & gesture input recognition</li>
+      <li>Sensor-based controls</li>
+      <li>Optimized real-time movement protocols</li>
+    </ul>
+  </div>
+</div>
+
+<!-- Skills section one-line -->
+<div class="section">
+  <h2>Skills</h2>
+  <div class="skills" style="display: flex; flex-wrap: wrap; gap: 10px;">
+    <div class="badge">Python</div>
+    <div class="badge">JavaScript</div>
+    <div class="badge">Java</div>
+    <div class="badge">C++</div>
+    <div class="badge">HTML/CSS</div>
+    <div class="badge">Docker</div>
+  </div>
+</div>
+
+<!-- JS to toggle project content -->
+<script>
+  function showProject(projectId) {
+    const projects = document.querySelectorAll('.project-content');
+    projects.forEach(p => p.style.display = 'none');
+    const buttons = document.querySelectorAll('.tab-buttons button');
+    buttons.forEach(b => b.classList.remove('active'));
+    document.getElementById(projectId).style.display = 'block';
+    event.target.classList.add('active');
+  }
+
+  // Hide all on load
+  window.onload = () => {
+    const projects = document.querySelectorAll('.project-content');
+    projects.forEach(p => p.style.display = 'none');
+  };
+</script>
+
+
+  <script>
+    function scrollToProject(id) {
+      const section = document.getElementById(id);
+      if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  </script>
+
+ 
+  <div class="section">
+    <h2>Awards</h2>
+    <ul>
+      <li>Supervised Machine Learning – Coursera (Stanford University & Deeplearning.ai)</li>
+      <li>No Code App Development – Microsoft Learn Student Ambassadors</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Leadership</h2>
+    <ul>
+      <li><strong>PopCulture Club – Joint Secretary:</strong> Organized events, coordinated member activities</li>
+      <li><strong>GirlUp VIT – Content Team:</strong> Created awareness content on gender equality</li>
+      <li><strong>CSED – Editorial Team:</strong> Helped publish social entrepreneurship projects</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Languages</h2>
+    <div class="languages">
+      <div class="badge">English</div>
+      <div class="badge">Tamil</div>
+    </div>
+  </div>
+
+</body>
+</html>
